@@ -92,6 +92,8 @@ a {
     font-weight: 400;
     font-size: 11px;
     color: #000;
+    max-width: 342px;
+    margin: 0 auto;
 }
 
 .about-text:not(:last-child) {
