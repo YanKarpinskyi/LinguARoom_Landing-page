@@ -7,7 +7,6 @@
 body {
     width: 393px;
     margin: 15px auto;
-    border: 3px solid black;
     font-family: "Alexandria", sans-serif;
 }
 
@@ -19,11 +18,11 @@ body {
     align-items: center;
 }
 
-.header > *:not(:last-child) {
+.header>*:not(:last-child) {
     margin: 0 0.4vw;
 }
 
-.header > p{
+.header>p {
     font-family: "Alegreya SC", sans-serif;
     font-weight: 900;
 }
@@ -42,8 +41,142 @@ a {
     background-color: bisque;
 }
 
+
+/* ---HERO ------ */
+
+.hero {
+    padding-top: 16px;
+    padding-bottom: 19px;
+}
+
+.hero-img {
+    display: block;
+    max-width: 64px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 17px;
+}
+
+.hero-title {
+    font-weight: 700;
+    font-size: 32px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.hero-text {
+    font-weight: 700;
+    font-size: 18px;
+    color: #4890cf;
+    text-align: center;
+}
+
+/* ---ABOUT ------ */
+
+.about {
+    padding-top: 19px;
+    padding-bottom: 18px;
+    text-align: center;
+
+}
+
+.about-title {
+    font-weight: 700;
+    font-size: 17px;
+    color: #000;
+    margin-bottom: 6px;
+}
+
+.about-text {
+    font-weight: 400;
+    font-size: 11px;
+    color: #000;
+}
+
+.about-text:not(:last-child) {
+    margin-bottom: 13px;
+}
+
+/* ---WITHUS ------ */
+
+.withus {
+    padding-top: 18px;
+}
+
+.withus-title {
+    font-weight: 700;
+    font-size: 17px;
+    color: #000;
+}
+
+.withus-list {}
+
+.withus-item {}
+
+.withus-item-img {}
+
+.withus-item-title {}
+
+.withus-item-text {}
+
+/* ---BUSINESS ------ */
+
+.business {}
+
+.bussiness-title {}
+
+.bussiness-list {}
+
+.bussiness-item {}
+
+.bussiness-item-img {}
+
+.bussiness-item-title {}
+
+.bussiness-item-text {}
+
+/* ---JOIN ------ */
+
+.join {}
+
+.join-title {}
+
+.join-text {}
+
+.join-btn {}
+
+/* ---TEAM ------ */
+
+.team {}
+
+.team-title {}
+
+.team-list {}
+
+.team-item {}
+
+.team-item-img {}
+
+.team-item-title {}
+
+.team-item-text {}
+
+.team-advisory-title {}
+
+/* ---QUESTION ------ */
+
+.question {}
+
+.question-title {}
+
+
+
+
+
+
 .footer {
-    background: linear-gradient(321deg,rgba(46, 80, 98, 1) 0%, rgba(93, 163, 200, 1) 100%);
+    background: linear-gradient(321deg, rgba(46, 80, 98, 1) 0%, rgba(93, 163, 200, 1) 100%);
     color: #ffffff;
 }
 
