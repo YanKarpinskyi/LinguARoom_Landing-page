@@ -41,6 +41,9 @@ a {
     background-color: bisque;
 }
 
+ul {
+    list-style: none;
+}
 
 /* ---HERO ------ */
 
@@ -104,6 +107,7 @@ a {
 
 .withus {
     padding-top: 18px;
+    padding-bottom: 42px;
 }
 
 .withus-title {
@@ -124,33 +128,101 @@ a {
 
 /* ---BUSINESS ------ */
 
-.business {}
+.business {
+    padding-top: 42px;
+    padding-bottom: 60px;
+}
 
-.bussiness-title {}
+.business-container {
+    max-width: 359px;
+    margin: 0 auto;
+}
 
-.bussiness-list {}
+.bussiness-title {
+    font-weight: 700;
+    font-size: 17px;
+    color: #000;
+    text-align: center;
+}
 
-.bussiness-item {}
+.bussiness-list {
+    display: flex;
+    gap: 16px;
+}
 
-.bussiness-item-img {}
+.bussiness-item {
+    /* width: calc((359px - 2*16px)/3); */
+    width: 109px;
+}
 
-.bussiness-item-title {}
+.bussiness-item-img {
+    display: block;
+    margin: 0 auto;
+    width: 95px;
+    height: auto;
+    margin-bottom: 4px;
+}
 
-.bussiness-item-text {}
+.bussiness-item-title {
+    font-weight: 400;
+    font-size: 10px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 1px;
+}
+
+.bussiness-item-text {
+    font-weight: 300;
+    font-size: 6px;
+    text-align: center;
+    color: #000;
+}
 
 /* ---JOIN ------ */
 
-.join {}
+.join {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 
-.join-title {}
+.join-title {
+    font-weight: 700;
+    font-size: 15px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 7px;
+}
 
-.join-text {}
+.join-text {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: #000;
+    max-width: 286px;
+    margin: 0 auto;
+    margin-bottom: 36px;
+}
 
-.join-btn {}
+.join-btn {
+    display: block;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
+    padding: 13px 49px;
+    margin: 0 auto;
+    background: #529895;
+}
 
 /* ---TEAM ------ */
 
-.team {}
+.team {
+    padding-top: 60px;
+    padding-bottom: 79px;
+}
 
 .team-title {}
 
@@ -168,7 +240,10 @@ a {
 
 /* ---QUESTION ------ */
 
-.question {}
+.question {
+    padding-top: 79px;
+    padding-bottom: 126px;
+}
 
 .question-title {}
 
