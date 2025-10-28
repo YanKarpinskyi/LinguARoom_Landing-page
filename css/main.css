@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 393px;
+    margin: 15px auto;
+    border: 3px solid black;
+    font-family: "Alexandria", sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #2E5062, #5DA3C8);
+    color: white;
+    align-items: center;
+}
+
+.header > *:not(:last-child) {
+    margin: 0 0.4vw;
+}
+
+.header > p{
+    font-family: "Alegreya SC", sans-serif;
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.animation {
+    height: 70px;
+    width: 97%;
+    margin: 7px auto;
+    background-color: bisque;
+}
+
+.footer {
+    background: linear-gradient(321deg,rgba(46, 80, 98, 1) 0%, rgba(93, 163, 200, 1) 100%);
+    color: #ffffff;
+}
+
+.contacts {
+    width: 100%;
+    text-align: center;
+    padding-top: 1.5vw;
+}
+
+.contact-info_container {
+    margin: 1vw auto 3vw;
+}
+
+.contact-info {
+    font-size: small;
+}
+
+.tel-info {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 0.7vw;
+    text-align: center;
+}
+
+.copyright {
+    font-size: 0.5rem;
+    text-align: center;
+    padding-bottom: 1vw;
+}
