@@ -7,7 +7,6 @@
 body {
     width: 393px;
     margin: 15px auto;
-    border: 3px solid black;
     font-family: "Alexandria", sans-serif;
 }
 
@@ -19,11 +18,11 @@ body {
     align-items: center;
 }
 
-.header > *:not(:last-child) {
-    margin: 0 0.4vw;
+.header>*:not(:last-child) {
+    margin: 0 0.8vh;
 }
 
-.header > p{
+.header>p {
     font-family: "Alegreya SC", sans-serif;
     font-weight: 900;
 }
@@ -35,6 +34,14 @@ a {
     font-size: 0.9rem;
 }
 
+section:not(:first-of-type) {
+    margin-top: 60px;
+}
+
+section:nth-of-type(2) {
+    margin-top: 10px;
+}
+
 .animation {
     height: 70px;
     width: 97%;
@@ -42,8 +49,231 @@ a {
     background-color: bisque;
 }
 
+ul {
+    list-style: none;
+}
+
+/* ---HERO ------ */
+
+.hero {
+    padding-top: 16px;
+    padding-bottom: 19px;
+}
+
+.hero-img {
+    display: block;
+    max-width: 64px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.hero-title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #000;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.hero-text {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #4890cf;
+    text-align: center;
+}
+
+/* ---ABOUT ------ */
+
+.about {
+    text-align: center;
+}
+
+.about-text {
+    font-size: 0.7rem;
+    max-width: 342px;
+    margin: 0 auto;
+}
+
+.about-text:not(:last-child) {
+    margin-bottom: 13px;
+}
+
+/* ---WITHUS ------ */
+
+.withus-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.withus-item {
+    text-align: center;
+    grid-column: span 2;
+}
+
+.withus-item:nth-child(2),
+.withus-item:nth-child(5) {
+    grid-column: span 2;
+}
+
+.withus-item:nth-last-child(2) {
+    grid-column: 2 / span 2;
+    grid-row: 3;
+}
+
+.withus-item:last-child {
+    grid-column: 4 / span 2;
+    grid-row: 3;
+}
+
+.img-container {
+    width: 70px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+#withus-talk,
+#withus-situations,
+#withus-partners,
+#withus-levels,
+#withus-stories,
+#withus-progress,
+#withus-serts,
+#business-edu,
+#business-corp,
+#business-market {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+#withus-talk {
+    width: 100px;
+    height: 50px;
+    object-position: 0% 55%;
+}
+
+#withus-feedback {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      
+    object-position: 0% 9%;
+    transform: scale(1.5); 
+    border-radius: 0;
+}
+
+#withus-situations {
+    width: 100px;
+    height: 50px;
+    object-position: 30% 55%;
+}
+
+#withus-levels-container {
+    border-radius: 0px;
+}
+
+.withus-item-title {
+    margin: 2px 0;
+    font-size: 0.8rem;
+}
+
+.withus-item-text {
+    font-size: 0.5rem;
+}
+
+/* ---BUSINESS ------ */
+
+.business-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.business-item {
+    width: 130px;
+    text-align: center;
+}
+
+.business-item-title {
+    font-size: 0.8rem;
+}
+
+.business-item-text {
+    font-size: 0.5rem;
+}
+
+/* ---JOIN ------ */
+
+.join-text {
+    font-size: 0.7rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.join-btn {
+    display: block;
+    margin: 36px auto;
+    font-family: "Alexandria", sans-serif;
+    font-weight: 650;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
+    width: 15vh;
+    height: 6vh;
+    background: #529895;
+}
+
+.join-btn:hover {
+    background: #3F6866;
+}
+
+.join-btn:active {
+    background: #243938;
+}
+
+.join-btn:focus {
+    outline: 2px solid #529895;
+}
+
+/* ---TEAM ------ */
+
+.team {
+    padding-top: 60px;
+    padding-bottom: 79px;
+}
+
+.team-list {}
+
+.team-item {}
+
+.team-item-img {}
+
+.team-item-title {}
+
+.team-item-text {}
+
+.team-advisory-title {}
+
+/* ---QUESTION ------ */
+
+.question {
+    padding-top: 79px;
+    padding-bottom: 126px;
+}
+
+
+
+
+
+
 .footer {
-    background: linear-gradient(321deg,rgba(46, 80, 98, 1) 0%, rgba(93, 163, 200, 1) 100%);
+    background: linear-gradient(321deg, rgba(46, 80, 98, 1) 0%, rgba(93, 163, 200, 1) 100%);
     color: #ffffff;
 }
 
@@ -73,4 +303,9 @@ a {
     font-size: 0.5rem;
     text-align: center;
     padding-bottom: 1vw;
+}
+
+.section-title {
+    margin-bottom: 15px;
+    text-align: center;
 }
