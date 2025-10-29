@@ -273,6 +273,8 @@ ul {
     align-items: center;
     gap: 10px;
     cursor: pointer;
+    margin-top: 20px;
+    justify-content: space-between;
 }
 
 .question p {
@@ -282,8 +284,8 @@ ul {
 }
 
 .faq-arrow {
-    width: 20px;
-    height: 20px;
+    width: 2vh;
+    height: 1vh;
     transition: transform 0.3s ease;
     cursor: pointer;
     flex-shrink: 0;
@@ -315,6 +317,7 @@ ul {
 /* ---FOOTER ------ */
 
 .footer {
+    margin-top: 60px;
     background: linear-gradient(321deg, rgba(46, 80, 98, 1) 0%, rgba(93, 163, 200, 1) 100%);
     color: #ffffff;
 }
