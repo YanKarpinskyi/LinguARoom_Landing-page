@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@900&family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <div class="header">
@@ -24,13 +25,13 @@
     <section class="hero">
         <img src="./img/LR_logo_3 1.png" alt="logo" class="hero-img">
         <h1 class="hero-title">LinguARoom</h1>
-        <p class="hero-text">There’s the room for improvement</p>
+        <p class="hero-text">There's the room for improvement</p>
     </section>
     <section class="about">
         <h2 class="section-title">ABOUT US</h2>
-        <p class="about-text">LinguARoom isn’t just about learning — it’s about real conversations with a virtual
+        <p class="about-text">LinguARoom isn't just about learning — it's about real conversations with a virtual
             language partner.</p>
-        <p class="about-text">We’re building an AI-powered app that helps you practice any language in real-life
+        <p class="about-text">We're building an AI-powered app that helps you practice any language in real-life
             situations — from a café chat to a
             job interview.</p>
     </section>
@@ -128,78 +129,59 @@
     </section>
     <section class="join">
         <h2 class="section-title">Want to be among the first to try our service?</h2>
-        <p class="join-text">Apply below, leave your contacts, and we’ll reach out soon!</p>
-        <button type="button" class="join-btn">Join</button>
+        <p class="join-text">Apply below, leave your contacts, and we'll reach out soon!</p>
+        <button type="button" class="join-btn" id="openFormBtn">Join</button>
     </section>
-    <section class="team">
-        <h2 class="section-title">Our team</h2>
-        <ul class="team-list">
-            <li class="team-item">
-                <img src="" alt="" class="team-item-img">
-                <h4 class="team-item-title">name
-                </h4>
-                <p class="team-item-text">role</p>
-            </li>
-            <li class="team-item">
-                <img src="" alt="" class="team-item-img">
-                <h4 class="team-item-title">name
-                </h4>
-                <p class="team-item-text">role</p>
-            </li>
-            <li class="team-item">
-                <img src="" alt="" class="team-item-img">
-                <h4 class="team-item-title">name
-                </h4>
-                <p class="team-item-text">role</p>
-            </li>
-            <li class="team-item">
-                <img src="" alt="" class="team-item-img">
-                <h4 class="team-item-title">name
-                </h4>
-                <p class="team-item-text">role</p>
-            </li>
-            <li class="team-item">
-                <img src="" alt="" class="team-item-img">
-                <h4 class="team-item-title">name
-                </h4>
-                <p class="team-item-text">role</p>
-            </li>
-            <li class="team-item">
-                <img src="" alt="" class="team-item-img">
-                <h4 class="team-item-title">name
-                </h4>
-                <p class="team-item-text">role</p>
-            </li>
-            <li class="team-item">
-                <img src="" alt="" class="team-item-img">
-                <h4 class="team-item-title">name
-                </h4>
-                <p class="team-item-text">role</p>
-            </li>
-            <li class="team-item">
-                <img src="" alt="" class="team-item-img">
-                <h4 class="team-item-title">name
-                </h4>
-                <p class="team-item-text">role</p>
-            </li>
-        </ul>
-        <h3 class="section-title">Advisory Board</h3>
-        <ul class="team-list">
-            <li class="team-item">
-                <img src="" alt="" class="team-item-img">
-                <h4 class="team-item-title">name</h4>
-                <p class="team-item-text">role</p>
-            </li>
-            <li class="team-item">
-                <img src="" alt="" class="team-item-img">
-                <h4 class="team-item-title">name</h4>
-                <p class="team-item-text">role</p>
-            </li>
-        </ul>
+    <section class="faq-container">
+        <h2 class="section-title" id="faq-title">Common questions</h2>
+       
+        <div class="question" data-answer="Currently, you can practice only with AI characters. Each AI has a unique personality and communication style, making your experience as close to real-life as possible.">
+            <p>Can I practice with real people or only AI?</p>
+            <img src="./img/faq-btn.png" alt="Toggle answer" class="faq-arrow">
+        </div>
+        <div class="answer">
+            <div class="answer-content"></div>
+        </div>
 
-    </section>
-    <section class="question">
-        <h2 class="section-title">Common questions</h2>
+        <div class="question" data-answer="We recommend 15-30 minutes daily. Consistency is key—even short sessions will show results in 1-2 months.">
+            <p>How much time should I spend daily to see results?</p>
+            <img src="./img/faq-btn.png" alt="Toggle answer" class="faq-arrow">
+        </div>
+        <div class="answer">
+            <div class="answer-content"></div>
+        </div>
+
+        <div class="question" data-answer="Yes, an internet connection is required for AI conversations and feedback. Offline modes for basic exercises (reading/writing) are planned for the future.">
+            <p>Is an internet connection required all the time?</p>
+            <img src="./img/faq-btn.png" alt="Toggle answer" class="faq-arrow">
+        </div>
+        <div class="answer">
+            <div class="answer-content"></div>
+        </div>
+
+        <div class="question" data-answer="The basic version is free with limited scenarios. Premium offers unlimited access, personalized quests, and certificates for $9.99/month.">
+            <p>Is it free? What do I get with the Premium plan?</p>
+            <img src="./img/faq-btn.png" alt="Toggle answer" class="faq-arrow">
+        </div>
+        <div class="answer">
+            <div class="answer-content"></div>
+        </div>
+
+        <div class="question" data-answer="Yes, students get 20% off with a student ID, and family plans for 3+ users offer 15% off. Details in your profile after signup.">
+            <p>Are there discounts for students or families?</p>
+            <img src="./img/faq-btn.png" alt="Toggle answer" class="faq-arrow">
+        </div>
+        <div class="answer">
+            <div class="answer-content"></div>
+        </div>
+
+        <div class="question" data-answer="We store recordings only for analysis (with your permission) and delete them after 30 days. You can disable recording in settings.">
+            <p>Do you store my voice recordings?</p>
+            <img src="./img/faq-btn.png" alt="Toggle answer" class="faq-arrow">
+        </div>
+        <div class="answer">
+            <div class="answer-content"></div>
+        </div>
     </section>
     <div class="footer">
         <div class="contacts">
@@ -218,6 +200,77 @@
         </div>
         <p class="copyright">© 2025 LinguARoom — AI + AR/VR language practice platform.</p>
     </div>
+    <!-- Modal with Form -->
+    <div class="modal-overlay" id="formModal">
+        <div class="modal-container">
+            <button class="close-btn" id="closeFormBtn" aria-label="Close"></button>
+            <h1>Join Our Beta Program</h1>
+            <p class="subtitle">Help us shape the future of our platform</p>
+           
+            <form id="betaForm" action="https://getform.io/f/amdylxnb" method="POST">
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                    <p class="field-note">To personalize communication</p>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                    <p class="field-note">Main way to send access details or confirmation</p>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone / Telegram <span class="optional">(optional)</span></label>
+                    <input type="text" id="phone" name="phone" placeholder="+380... or @username">
+                    <p class="field-note">For quicker contact if needed</p>
+                </div>
+                <div class="form-group">
+                    <label for="country">Country / Region *</label>
+                    <select id="country" name="country" required>
+                        <option value="">Select your country</option>
+                        <option value="UA">Ukraine</option>
+                        <option value="US">United States</option>
+                        <option value="GB">United Kingdom</option>
+                        <option value="DE">Germany</option>
+                        <option value="FR">France</option>
+                        <option value="PL">Poland</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <input type="text" id="otherCountry" name="otherCountry" placeholder="Enter your country" style="display: none; margin-top: 10px;">
+                    <p class="field-note">To adjust time zone and potential pricing</p>
+                </div>
+                <div class="form-group">
+                    <label>Preferred Contact Method *</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="contactEmail" name="contactMethod" value="email" required>
+                            <label for="contactEmail">Email</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="contactPhone" name="contactMethod" value="phone">
+                            <label for="contactPhone">Phone</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="contactTelegram" name="contactMethod" value="telegram">
+                            <label for="contactTelegram">Telegram</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="contactWhatsApp" name="contactMethod" value="whatsapp">
+                            <label for="contactWhatsApp">WhatsApp</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="contactViber" name="contactMethod" value="viber">
+                            <label for="contactViber">Viber</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="motivation">Why do you want to test the platform? <span class="optional">(optional)</span></label>
+                    <textarea id="motivation" name="motivation" placeholder="Share your motivation or expectations..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit Application</button>
+            </form>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
 </body>
-
 </html>
