@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     min-width: 393px;
     margin: 0;
@@ -16,7 +20,10 @@ body {
     background: linear-gradient(to right, #2E5062, #5DA3C8);
     color: white;
     align-items: center;
-    /* gap: 0.01vw; */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000
 }
 
 .header>p {
@@ -29,6 +36,10 @@ a {
     color: white;
     font-weight: 400;
     font-size: 0.9rem;
+}
+
+section {
+    scroll-margin-top: 7vh;
 }
 
 section:not(:first-of-type) {
