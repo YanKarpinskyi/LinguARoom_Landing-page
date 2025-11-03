@@ -4,22 +4,26 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    width: 393px;
-    margin: 15px auto;
+    min-width: 393px;
+    margin: 0;
     font-family: "Alexandria", sans-serif;
 }
 
 .header {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     background: linear-gradient(to right, #2E5062, #5DA3C8);
     color: white;
     align-items: center;
-}
-
-.header>*:not(:last-child) {
-    margin: 0 0.8vh;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000
 }
 
 .header>p {
@@ -32,6 +36,10 @@ a {
     color: white;
     font-weight: 400;
     font-size: 0.9rem;
+}
+
+section {
+    scroll-margin-top: 7vh;
 }
 
 section:not(:first-of-type) {
@@ -55,14 +63,14 @@ ul {
 
 /* ---HERO ------ */
 
-.hero {
+#hero {
     padding-top: 16px;
     padding-bottom: 19px;
 }
 
 .hero-img {
     display: block;
-    max-width: 64px;
+    max-width: 120px;
     height: auto;
     margin: 0 auto;
     margin-bottom: 1rem;
@@ -85,7 +93,7 @@ ul {
 
 /* ---ABOUT ------ */
 
-.about {
+#about {
     text-align: center;
 }
 
@@ -102,9 +110,6 @@ ul {
 /* ---WITHUS ------ */
 
 .withus-list {
-    /* display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, 1fr); */
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -114,27 +119,11 @@ ul {
 .withus-item {
     text-align: center;
     max-width: 60%;
-    /* grid-column: span 2; */
-}
-
-.withus-item:nth-child(2),
-.withus-item:nth-child(5) {
-    /* grid-column: span 2; */
-}
-
-.withus-item:nth-last-child(2) {
-    /* grid-column: 2 / span 2;
-    grid-row: 3; */
-}
-
-.withus-item:last-child {
-    /* grid-column: 4 / span 2;
-    grid-row: 3; */
 }
 
 .img-container {
-    width: 130px;
-    height: 90px;
+    width: 170px;
+    height: 120px;
     overflow: hidden;
     border-radius: 10px;
     margin: 0 auto;
@@ -284,8 +273,8 @@ ul {
 }
 
 .faq-arrow {
-    width: 2vh;
-    height: 1vh;
+    width: 3%;
+    height: 1%;
     transition: transform 0.3s ease;
     cursor: pointer;
     flex-shrink: 0;
@@ -322,7 +311,7 @@ ul {
     color: #ffffff;
 }
 
-.contacts {
+#contacts {
     width: 100%;
     text-align: center;
     padding-top: 1.5vw;
@@ -562,4 +551,182 @@ ul {
     color: #666;
     margin-top: 6px;
     font-style: italic;
+}
+
+/* --- MEDIA QUERIES --- */
+
+@media (min-width: 768px) {
+  body {
+    font-size: 1.05rem;
+  }
+
+  .header a {
+    font-size: 1.5rem;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-text {
+    font-size: 1.4rem;
+  }
+
+  .withus-list, .business-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .withus-item, .business-item {
+    width: 40%;
+    max-width: 380px;
+  }
+
+  .join {
+    width: 60%;
+  }
+
+  .join-btn {
+    width: 18vh;
+    height: 6.5vh;
+    font-size: 2.8vh;
+  }
+
+  .faq-container {
+    width: 75%;
+  }
+
+  #contacts > p {
+    font-size: 1.2rem;
+  }
+
+  .contact-info, .copyright {
+    font-size: 1rem;
+  }
+
+  .copyright {
+    font-size: 0.9rem;
+  }
+
+  #faq-title {
+    font-size: 2rem;
+  }
+
+  .question > p{
+    font-size: 1.2rem;
+  }
+
+  .answer-content {
+   font-size: 1rem; 
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    max-width: 950px;
+  }
+
+  .header {
+    justify-content: space-around;
+    padding: 10px 40px;
+  }
+
+  #hero {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  .hero-img {
+    max-width: 160px;
+  }
+
+  .hero-title {
+    font-size: 3.2rem;
+  }
+
+  .about-text {
+    font-size: 1.1rem;
+    min-width: 60%;
+  }
+
+  .withus-item, .business-item {
+    width: 28%;
+  }
+
+  .join {
+    width: 50%;
+  }
+
+  .modal-container {
+    max-width: 700px;
+    padding: 56px 48px;
+  }
+
+  .contact-info, .copyright {
+    font-size: 1rem;
+  }
+
+  .copyright {
+    font-size: 0.9rem;
+  }
+
+   #contacts > p {
+    font-size: 1.5rem;
+  }
+
+    #faq-title {
+    font-size: 2.2rem;
+  }
+
+  .question > p{
+    font-size: 1.4rem;
+  }
+
+  .answer-content {
+   font-size: 1.2rem; 
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    max-width: 100%;
+  }
+
+  .hero-title {
+    font-size: 3.8rem;
+  }
+
+  .hero-text {
+    font-size: 1.6rem;
+  }
+
+  .withus-item, .business-item {
+    width: 30%;
+    max-width: 420px;
+  }
+
+  .section-title {
+    font-size: 2.4rem;
+  }
+
+  .join {
+    width: 40%;
+  }
+
+  .faq-container {
+    width: 65%;
+  }
+
+  #faq-title {
+    font-size: 2.5rem;
+  }
+
+  .question > p{
+    font-size: 1.8rem;
+  }
+
+  .answer-content {
+   font-size: 1.6rem; 
+  }
 }
